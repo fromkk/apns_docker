@@ -22,7 +22,7 @@ pemfile="PEM FILE PATH HERE"
 # iOS apps bundle identifier
 bundleIdentifier="BUNDLE IDENTIFIER HERE"
 # push content
-data='{"aps":{"alert":"Push Alert Contnet","sound":"default"}}'
+pushData='{"aps": {"alert": "Push Test", "sound": "default", "badge": 3}}'
 ```
 
 ### Run docker
