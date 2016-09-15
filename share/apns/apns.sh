@@ -3,7 +3,7 @@
 token="YOUR TOKEN HERE"
 pemfile="PEM FILE PATH HERE"
 bundleIdentifier="BUNDLE IDENTIFIER HERE"
-data='{"aps":{"alert":"Push Alert Contnet","sound":"default"}}'
+pushData='{"aps": {"alert": "Push Test", "sound": "default", "badge": 3}}'
 debug=true
 
 CMDNAME=`basename $0`
@@ -20,7 +20,7 @@ else
 fi
 
 curl -v \
--d ${data} \
+-d "$pushData" \
 -H "apns-priority: 10" \
 -H "apns-expiration: 0" \
 -H "apns-topic: ${bundleIdentifier}" \
