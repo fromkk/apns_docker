@@ -2,7 +2,7 @@
 
 ## Usage
 
-### Create docker container
+### Create docker image
 
 ```bash
 git clone git@github.com:fromkk/apns_docker.git
